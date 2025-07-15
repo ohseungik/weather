@@ -1,6 +1,8 @@
 import { type NextRequest, NextResponse } from "next/server"
 import { translateCityName } from "@/app/utils/cityMapping"
 
+export const runtime = 'edge';
+
 const API_KEY = process.env.NEXT_PUBLIC_OPEN_WEATHER_MAP_KEY || "demo_key"
 const BASE_URL = "https://api.openweathermap.org/data/2.5"
 
